@@ -525,6 +525,7 @@ resource "databricks_permissions" "model_usage" {
 ## Model serving usage
 
 Valid permission levels for [databricks_model_serving](model_serving.md) are: `CAN_VIEW`, `CAN_QUERY`, and `CAN_MANAGE`.
+You can also manage permissions for all serving endpoints by `serving_endpoint_id = "root"`.
 
 ```hcl
 resource "databricks_model_serving" "this" {
